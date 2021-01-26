@@ -4,10 +4,9 @@
 object BuildModules {
     const val app = ":app"
     const val core = ":core"
-    const val navigation = ":navigation"
 
-    object Features {
-        const val home = ":features:home"
+    object Feature {
+        const val shopping = ":feature:shopping"
     }
 
     object Common {

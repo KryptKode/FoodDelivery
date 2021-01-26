@@ -62,6 +62,9 @@ dependencies {
     implementation(Libs.moshi_kotlin)
     kapt(Libs.moshi_kotlin_codegen)
 
+    implementation(Libs.rxandroid)
+    implementation(Libs.rxkotlin)
+
     implementation(Libs.espresso_idling_resource)
 
     androidTestImplementation(Libs.androidx_test_ext_junit)
@@ -89,5 +92,5 @@ dependencies {
     testImplementation(Libs.paging_common)
     testImplementation(Libs.robolectric)
     testImplementation(Libs.androidx_test_rules)
-    testImplementation("androidx.test:core:1.3.0")
+    testImplementation(Libs.androidx_test_core)
 }

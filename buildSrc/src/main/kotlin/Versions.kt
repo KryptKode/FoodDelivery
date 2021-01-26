@@ -1,4 +1,3 @@
-import kotlin.String
 import org.gradle.plugin.use.PluginDependenciesSpec
 import org.gradle.plugin.use.PluginDependencySpec
 
@@ -46,6 +45,8 @@ object Versions {
 
     const val androidx_test_rules: String = "1.3.0"
 
+    const val androidx_test_core: String = "1.3.0"
+
     const val junit_junit: String = "4.13.1"
 
     const val de_fayard_buildsrcversions_gradle_plugin: String = "0.7.0"
@@ -53,8 +54,6 @@ object Versions {
     const val kotlin_scripting_compiler_embeddable: String = "1.4.21" // available:"1.4.21-2"
 
     const val kotlin_annotation_processing_gradle: String = "1.4.21" // available: "1.4.21-2"
-
-    const val inline_activity_result_kotlin: String = "1.0.4"
 
     const val hilt_android_gradle_plugin: String = "2.28.3-alpha"
 
@@ -90,8 +89,6 @@ object Versions {
 
     const val javax_inject: String = "1"
 
-    const val recyclerview: String = "1.1.0"
-
     const val lint_gradle: String = "27.1.1" // available: "27.1.2"
 
     const val robolectric: String = "4.4" // available: "4.5"
@@ -102,9 +99,15 @@ object Versions {
 
     const val appcompat: String = "1.2.0"
 
+    const val rxandroid: String = "2.1.1"
+
     const val core_ktx: String = "1.3.2"
 
     const val material: String = "1.2.1"
+
+    const val rxkotlin: String = "2.4.0"
+
+    const val turbine: String = "0.3.0"
 
     const val ktlint: String = "0.38.1" // available: "0.40.0"
 
@@ -113,6 +116,8 @@ object Versions {
     const val aapt2: String = "4.1.1-6503028" // available: "4.1.2-6503028"
 
     const val truth: String = "1.1" // available: "1.1.2"
+
+    const val mvrx: String = "2.0.0-beta3"
 
     /**
      * Current version: "6.5"
@@ -128,4 +133,4 @@ object Versions {
  */
 val PluginDependenciesSpec.buildSrcVersions: PluginDependencySpec
     inline get() =
-        id("de.fayard.buildSrcVersions").version(Versions.de_fayard_buildsrcversions_gradle_plugin)
+            id("de.fayard.buildSrcVersions").version(Versions.de_fayard_buildsrcversions_gradle_plugin)

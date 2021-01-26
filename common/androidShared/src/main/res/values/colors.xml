@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#349966</color>
-    <color name="colorPrimaryDark">#008051</color>
-    <color name="colorPrimaryLight">#C8E6C9</color>
+    <color name="colorPrimary">#D84315</color>
+    <color name="colorPrimaryDark">#BF3F17</color>
+    <color name="colorPrimaryLight">#F68C6B</color>
     <color name="colorOnPrimary">#FFFFFF</color>
 
-    <color name="colorSecondary">#72b3e7</color>
-    <color name="colorSecondaryDark">#446885</color>
+    <color name="colorSecondary">#00E6FE</color>
+    <color name="colorSecondaryDark">#029FAF</color>
     <color name="colorCard">@color/cardview_light_background</color>
 
-    <color name="colorAccent">#ed524f</color>
+    <color name="colorAccent">#FDD844</color>
     <color name="colorOnAccent">#FFFFFF</color>
 
     <color name="textPrimary">#212121</color>
