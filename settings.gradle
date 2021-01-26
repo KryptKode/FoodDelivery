@@ -3,4 +3,4 @@ include ':common:testShared'
 include ':core'
 include ':app'
 include ':feature:shopping'
-rootProject.name = "AndroidMultiModuleTemplate"
+rootProject.name = "FoodDelivery"

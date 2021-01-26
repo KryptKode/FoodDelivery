@@ -24,6 +24,11 @@ dependencies {
     implementation(Libs.circleimageview)
     implementation(Libs.pageindicatorview)
     implementation(Libs.viewpager2)
+    implementation("com.ogaclejapan.smarttablayout:library:2.0.0@aar")
+    implementation("com.ogaclejapan.smarttablayout:utils-v4:2.0.0@aar")
+
+    implementation(Libs.moshi_kotlin)
+    kapt(Libs.moshi_kotlin_codegen)
 
     implementation(Libs.rxandroid)
     implementation(Libs.rxkotlin)

@@ -1,0 +1,79 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "name": "Deluxe",
+      "description": "Bullas observare! Hercle, zelus camerarius!, fidelis verpa! A falsis, orexis azureus secula.",
+      "image": "https://picsum.photos/300/300.jpg",
+      "weight": 55,
+      "type": "pizza",
+      "quantity": 33,
+      "size": 34,
+      "price": "32",
+      "currency": "USD",
+      "tags": [
+        "spicy",
+        "vegan"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Hawaiian",
+      "description": "Bullas observare! Hercle, zelus camerarius!, fidelis verpa! A falsis, orexis azureus secula.",
+      "image": "https://picsum.photos/300/300.jpg",
+      "weight": 55,
+      "quantity": 33,
+      "type": "pizza",
+      "size": 34,
+      "price": "32",
+      "currency": "USD",
+      "tags": [
+        "spicy",
+        "vegan"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Vierium",
+      "description": "Bullas observare! Hercle, zelus camerarius!, fidelis verpa! A falsis, orexis azureus secula.",
+      "image": "https://picsum.photos/300/300.jpg",
+      "weight": 55,
+      "quantity": 33,
+      "type": "pizza",
+      "size": 34,
+      "price": "33",
+      "currency": "USD",
+      "tags": []
+    },
+    {
+      "id": "4",
+      "name": "Advena",
+      "description": "Bullas observare! Hercle, zelus camerarius!, fidelis verpa! A falsis, orexis azureus secula.",
+      "image": "https://picsum.photos/300/300.jpg",
+      "weight": 55,
+      "quantity": 33,
+      "type": "pizza",
+      "size": 34,
+      "price": "44",
+      "currency": "USD",
+      "tags": [
+        "spicy"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Amor Camerarius",
+      "description": "Bullas observare! Hercle, zelus camerarius!, fidelis verpa! A falsis, orexis azureus secula.",
+      "image": "https://picsum.photos/300/300.jpg",
+      "weight": 55,
+      "quantity": 33,
+      "type": "pizza",
+      "size": 34,
+      "price": "12",
+      "currency": "USD",
+      "tags": [
+        "vegan"
+      ]
+    }
+  ]
+}
