@@ -3,4 +3,4 @@ common/androidShared/src
 common/testShared/src
 core/src
 libs/basemvi/src
-features/users/src
+feature/shopping/src
