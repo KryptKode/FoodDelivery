@@ -68,7 +68,7 @@ The application follows the clean architecture concept. As software architecture
 
 This module contains features supported by the application. At present, only the `shopping` feature is implemented. Other features can be added as modules as the project scales. 
 
-The shopping feature has two screens. One that shows a list of food. The user can scroll through the list and add an item to their cart. The other for displaying the user cart information. The module defines both the view and presentation for the feature. The presentation is implemented using `[MavericksViewModel](https://github.com/airbnb/MvRx/blob/master/mvrx/src/main/kotlin/com/airbnb/mvrx/MavericksViewModel.kt)` + `Fragment` combination with an MVRx architecture
+The shopping feature has two screens. One that shows a list of food. The user can scroll through the list and add an item to their cart. The other for displaying the user cart information. The module defines both the view and presentation for the feature. The presentation is implemented using [`MavericksViewModel`](https://github.com/airbnb/MvRx/blob/master/mvrx/src/main/kotlin/com/airbnb/mvrx/MavericksViewModel.kt) + `Fragment` combination with an MVRx architecture
 
 ### core module
 
