@@ -16,7 +16,6 @@ object GradlePluginId {
     const val kotlinParcelize = "kotlin-parcelize"
     const val kotlinKapt = "kotlin-kapt"
     const val kotlin = "kotlin"
-    const val daggerHilt = "dagger.hilt.android.plugin"
     const val navigationSafeArgs = "androidx.navigation.safeargs"
     const val jacoco = "com.vanniktech.android.junit.jacoco"
 }
@@ -41,9 +40,6 @@ val PluginDependenciesSpec.kotlinParcelize: PluginDependencySpec
 
 val PluginDependenciesSpec.kotlinKapt: PluginDependencySpec
     get() = id(GradlePluginId.kotlinKapt)
-
-val PluginDependenciesSpec.daggerHilt: PluginDependencySpec
-    get() = id(GradlePluginId.daggerHilt)
 
 val PluginDependenciesSpec.navigationSafeArgs: PluginDependencySpec
     get() = id(GradlePluginId.navigationSafeArgs)

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_shopping">Shopping</string>
+    <string name="filters_label">FILTERS</string>
+    <string name="food_image_cd">Food image</string>
+    <string name="show_case_image_cd">show case image</string>
+    <string name="karoz_delivery">Karoz\nDelivery</string>
+</resources>

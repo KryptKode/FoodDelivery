@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tab"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardElevation="16dp"
+    app:cardCornerRadius="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="-16dp">
+
+        <com.ogaclejapan.smarttablayout.SmartTabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toTopOf="@id/guidelineTop"
+            app:stl_clickable="true"
+            app:stl_customTabTextLayoutId="@layout/tab_item"
+            app:stl_customTabTextViewId="@id/title_text_view"
+            app:stl_distributeEvenly="false"
+            app:stl_dividerThickness="0dp"
+            app:stl_drawDecorationAfterTab="false"
+            app:stl_indicatorInFront="false"
+            app:stl_indicatorInterpolation="linear"
+            app:stl_indicatorThickness="36dp"
+            app:stl_indicatorWidth="0dp"
+            app:stl_indicatorWithoutPadding="true"
+            app:stl_overlineThickness="0dp"
+            app:stl_titleOffset="24dp"
+            app:stl_underlineThickness="0dp" />
+
+
+        <TextView
+            android:id="@+id/filter_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/filters_label"
+            android:textAppearance="@style/TextAppearance.App.ListPrimary"
+            app:layout_constraintBottom_toBottomOf="@id/filters_chip_group"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toTopOf="@id/filters_chip_group" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/filters_chip_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toEndOf="@id/filter_text_view"
+            app:layout_constraintTop_toBottomOf="@id/tab_layout"
+            app:singleLine="true" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@id/filters_chip_group"
+            tools:listitem="@layout/item_food"
+            android:paddingBottom="30dp"/>
+
+
+        <include layout="@layout/guidelines" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

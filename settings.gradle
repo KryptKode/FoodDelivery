@@ -1,6 +1,6 @@
 include ':common:androidShared'
 include ':common:testShared'
 include ':core'
-include ':navigation'
 include ':app'
-rootProject.name = "AndroidMultiModuleTemplate"
+include ':feature:shopping'
+rootProject.name = "FoodDelivery"

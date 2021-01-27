@@ -3,7 +3,6 @@ plugins {
     kotlinAndroid
     kotlinParcelize
     kotlinKapt
-    daggerHilt
     jacoco
 }
 
@@ -40,12 +39,20 @@ android {
 
 dependencies {
 
+    implementation(project(BuildModules.core))
+    implementation(project(BuildModules.Common.androidShared))
+    implementation(project(BuildModules.Feature.shopping))
+
     implementation(Libs.kotlin_stdlib)
     implementation(Libs.core_ktx)
     implementation(Libs.appcompat)
     implementation(Libs.timber)
 
     implementation(Libs.moshi_kotlin)
+
+    implementation(Libs.rxandroid)
+    implementation(Libs.rxkotlin)
+    implementation(Libs.mvrx)
 
     implementation(Libs.room_ktx)
     implementation(Libs.room_runtime)
@@ -56,12 +63,14 @@ dependencies {
     implementation(Libs.navigation_fragment_ktx)
     implementation(Libs.navigation_ui_ktx)
 
-    debugImplementation("com.squareup.leakcanary:leakcanary-android:2.6")
+    implementation (Libs.koin_android)
+    implementation (Libs.koin_androidx_scope)
+    implementation (Libs.koin_androidx_viewmodel)
 
-    implementation(Libs.hilt_android)
-    kapt(Libs.hilt_android_compiler)
-    implementation(Libs.hilt_lifecycle_viewmodel)
-    kapt(Libs.hilt_compiler)
+    debugImplementation(Libs.leakcanary_android)
+
+    implementation(Libs.dagger_android)
+    kapt(Libs.dagger_compiler)
 
     testImplementation(Libs.junit_junit)
     androidTestImplementation(Libs.androidx_test_ext_junit)

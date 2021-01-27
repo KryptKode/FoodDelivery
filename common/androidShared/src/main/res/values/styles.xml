@@ -1,5 +1,15 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/textPrimary</item>
+        <item name="android:textColorSecondary">@color/textSecondary</item>
+    </style>
+
+
     <!-- For titles-->
     <style name="TextAppearance.App.H1" parent="@style/TextAppearance.MaterialComponents.Headline5">
         <item name="android:textSize">@dimen/text_size_h1</item>
@@ -17,6 +27,13 @@
     <!-- For other prominent text -->
     <style name="TextAppearance.App.H3" parent="@style/TextAppearance.App.H1">
         <item name="android:textSize">@dimen/text_size_h3</item>
+        <item name="fontFamily">@font/lato_bold</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+    </style>
+
+    <!-- For other prominent text -->
+    <style name="TextAppearance.App.H4" parent="@style/TextAppearance.App.H1">
+        <item name="android:textSize">@dimen/text_size_h4</item>
         <item name="fontFamily">@font/lato_bold</item>
         <item name="android:fontFamily">@font/lato_bold</item>
     </style>
@@ -61,8 +78,12 @@
     </style>
 
     <style name="Widget.App.Button" parent="Widget.MaterialComponents.Button">
-        <item name="android:minHeight">?actionBarSize</item>
+        <item name="android:minHeight">44dp</item>
         <item name="android:textAppearance">@style/TextAppearance.App.Button</item>
+    </style>
+
+    <style name="Widget.App.Button.RoundCorners" parent="Widget.App.Button">
+        <item name="cornerRadius">14dp</item>
     </style>
 
     <style name="Widget.App.Button.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
