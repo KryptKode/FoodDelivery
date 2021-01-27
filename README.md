@@ -62,7 +62,7 @@ To build this project, you require:
 
 The application follows the clean architecture concept. As software architecture involves the design decisions that are hard to change, we should take an approach that does not result in coupling of the various components of the software. This makes it easy to make changes as it scales. The presentation layer for each feature uses an [MvRx](https://github.com/airbnb/MvRx) architecture. With this in mind, the project is organised into modules as follows:
 
-![Architecture](https://user-images.githubusercontent.com/25648077/105930387-dfe2e480-6049-11eb-8062-52837cf456b6.png
+![Architecture](https://user-images.githubusercontent.com/25648077/105930387-dfe2e480-6049-11eb-8062-52837cf456b6.png)
 
 ### feature modules
 
