@@ -1,7 +1,6 @@
 plugins {
     androidLibrary
     kotlinKapt
-    daggerHilt
 }
 
 dependencies {
@@ -24,8 +23,9 @@ dependencies {
     implementation(Libs.circleimageview)
     implementation(Libs.pageindicatorview)
     implementation(Libs.viewpager2)
-    implementation("com.ogaclejapan.smarttablayout:library:2.0.0@aar")
-    implementation("com.ogaclejapan.smarttablayout:utils-v4:2.0.0@aar")
+
+    implementation(Libs.library)
+    implementation(Libs.utils_v4)
 
     implementation(Libs.moshi_kotlin)
     kapt(Libs.moshi_kotlin_codegen)
@@ -48,10 +48,9 @@ dependencies {
     implementation(Libs.lifecycle_runtime_ktx)
     implementation(Libs.lifecycle_common_java8)
 
-    implementation(Libs.hilt_android)
-    kapt(Libs.hilt_android_compiler)
-    implementation(Libs.hilt_lifecycle_viewmodel)
-    kapt(Libs.hilt_compiler)
+    implementation (Libs.koin_android)
+    implementation (Libs.koin_androidx_scope)
+    implementation (Libs.koin_androidx_viewmodel)
 
     androidTestImplementation(Libs.androidx_test_ext_junit)
     androidTestImplementation(Libs.espresso_core)

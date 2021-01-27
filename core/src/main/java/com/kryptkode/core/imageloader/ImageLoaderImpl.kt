@@ -2,11 +2,9 @@ package com.kryptkode.core.imageloader
 
 import android.content.Context
 import android.widget.ImageView
-import dagger.hilt.android.qualifiers.ActivityContext
-import javax.inject.Inject
 
-class ImageLoaderImpl @Inject constructor(
-    @ActivityContext private val context: Context
+class ImageLoaderImpl  constructor(
+    private val context: Context
 ) : ImageLoader {
 
     override fun load(

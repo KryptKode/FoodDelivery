@@ -35,11 +35,6 @@ dependencies {
     implementation(Libs.work_runtime_ktx)
     androidTestImplementation(Libs.work_testing)
 
-    implementation(Libs.hilt_android)
-    kapt(Libs.hilt_android_compiler)
-    implementation(Libs.hilt_work)
-    kapt(Libs.hilt_compiler)
-
     implementation(Libs.timber)
     implementation(Libs.moshi_kotlin)
 
@@ -62,8 +57,15 @@ dependencies {
     implementation(Libs.moshi_kotlin)
     kapt(Libs.moshi_kotlin_codegen)
 
+    implementation (Libs.koin_android)
+    implementation (Libs.koin_androidx_scope)
+    implementation (Libs.koin_androidx_viewmodel)
+
+
     implementation(Libs.rxandroid)
     implementation(Libs.rxkotlin)
+    implementation(Libs.mvrx)
+    implementation(Libs.javax_inject)
 
     implementation(Libs.espresso_idling_resource)
 

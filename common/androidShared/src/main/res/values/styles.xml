@@ -31,6 +31,13 @@
         <item name="android:fontFamily">@font/lato_bold</item>
     </style>
 
+    <!-- For other prominent text -->
+    <style name="TextAppearance.App.H4" parent="@style/TextAppearance.App.H1">
+        <item name="android:textSize">@dimen/text_size_h4</item>
+        <item name="fontFamily">@font/lato_bold</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+    </style>
+
     <style name="TextAppearance.App.Button" parent="TextAppearance.MaterialComponents.Button">
         <item name="android:letterSpacing" tools:targetApi="lollipop">0</item>
         <item name="android:textAllCaps">false</item>
